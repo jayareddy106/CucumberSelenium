@@ -7,6 +7,17 @@ import org.openqa.selenium.support.ui.Select;
 
 public class AddCartPage
 {
+
+	@FindBy(how=How.ID,using="userName")
+	public static WebElement username;
+	
+	@FindBy(how=How.ID,using="password")
+	public static WebElement Password;
+	
+	@FindBy(how=How.CSS,using="input[value='Login']")
+	public static WebElement login;
+
+	
 	@FindBy(how=How.XPATH,using="//div/div[1]/button")
 	public static WebElement addproductbutton;
 	
@@ -45,5 +56,5 @@ public class AddCartPage
 	@FindBy(how=How.CLASS_NAME,using="input-group image-preview")
 	public static WebElement file;
 	
-	
-}  
+
+}
