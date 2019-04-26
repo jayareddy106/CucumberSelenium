@@ -18,7 +18,7 @@ public class RegistrationStepDefination {
 
 	WebDriver driver;
 
-	@Before
+	//@Before
 	public void inIt() {
 		driver = DriverUtility.getDriver("chrome");
 		PageFactory.initElements(driver, RegistrationPage.class);
@@ -27,7 +27,7 @@ public class RegistrationStepDefination {
 
 	}
 
-	@Given("url of DemoWebShop")
+	//@Given("url of DemoWebShop")
 	public void url_of_DemoWebShop() {
 		  driver.get("http://demowebshop.tricentis.com/register");
 		

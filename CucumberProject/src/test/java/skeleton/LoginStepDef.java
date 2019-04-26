@@ -16,7 +16,7 @@ import cucumber.api.java.en.When;
 public class LoginStepDef {
 	WebDriver driver;
 
-	@Before
+	//@Before
 	public void before() {
 
 		driver = DriverUtility.getDriver("chrome");
@@ -24,7 +24,7 @@ public class LoginStepDef {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@After
+	//@After
 	public void after() {
 		driver.close();
 	}

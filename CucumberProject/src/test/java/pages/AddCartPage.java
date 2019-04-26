@@ -26,7 +26,7 @@ public class AddCartPage
 	
 	public static void select() {
 		Select s=new Select(slect);
-		s.selectByIndex(0);
+		s.selectByIndex(1);
 	}
 	
 	@FindBy(how=How.ID,using="subcategorydropid")
@@ -56,5 +56,11 @@ public class AddCartPage
 	@FindBy(how=How.CLASS_NAME,using="input-group image-preview")
 	public static WebElement file;
 	
-
+	@FindBy(how=How.CSS,using="input[value='Add Product']")
+	public static WebElement addproduct;
+	
+	@FindBy(how=How.XPATH,using="/html/body/main/div/div/div/form/b/i")
+	public static WebElement productadded;
+	
+	
 }

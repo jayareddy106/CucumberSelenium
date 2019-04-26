@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-04-26T09:33:23.882Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7580922800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AddCart.inIt()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Product AddCart",
+        "description": "",
+        "id": "addcart-feature;product-addcart",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2421099000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user enter url",
+            "match": {
+              "location": "AddCart.user_enter_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2219308600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enter data for Addcart",
+            "match": {
+              "location": "AddCart.user_enter_data_for_Addcart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36498900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "product add successfully",
+            "match": {
+              "location": "AddCart.product_add_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "AddCart feature",
+    "description": "",
+    "id": "addcart-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/skeleton/cucumber.feature",
+    "tags": []
+  }
+]
